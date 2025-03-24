@@ -13,3 +13,4 @@ venv
 media-serve
 update_and_deploy.sh
 .pylintrc
+dump.sql
