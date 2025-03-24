@@ -172,7 +172,7 @@ FIXTURES = [
 #    }
 #}
 
-SQLITE_DB_PATH =  os.path.join(BASE_DIR, env('SQLITE_DB_PATH'))
+'''SQLITE_DB_PATH =  os.path.join(BASE_DIR, env('SQLITE_DB_PATH'))
 if env('DATABASE_TYPE') == 'sqlite':
     DATABASES = {
         'default': {
@@ -180,19 +180,19 @@ if env('DATABASE_TYPE') == 'sqlite':
             'NAME': SQLITE_DB_PATH,
         }
     }
-elif env('DATABASE_TYPE') == 'postgresql':
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': env('POSTGRES_DB_NAME'),
-            'USER': env('POSTGRES_DB_USER'),
-            'PASSWORD': env('POSTGRES_DB_PASSWORD'),
-            'HOST': env('POSTGRES_DB_HOST'),
-            'PORT': env('POSTGRES_DB_PORT'),
-        }
+elif env('DATABASE_TYPE') == 'postgresql':'''
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': env('POSTGRES_DB_NAME'),
+        'USER': env('POSTGRES_DB_USER'),
+        'PASSWORD': env('POSTGRES_DB_PASSWORD'),
+        'HOST': env('POSTGRES_DB_HOST'),
+        'PORT': env('POSTGRES_DB_PORT'),
     }
-else:
-    raise ValueError("Unknown database type specified in DATABASE_TYPE.")
+}
+'''else:
+    raise ValueError("Unknown database type specified in DATABASE_TYPE.")'''
 
 
 

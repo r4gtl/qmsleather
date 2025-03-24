@@ -1,6 +1,5 @@
 asgiref==3.6.0
 astroid==3.0.1
-backports.zoneinfo==0.2.1
 beautifulsoup4==4.12.2
 chardet==5.2.0
 contourpy==1.1.0
